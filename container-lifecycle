@@ -1,0 +1,35 @@
+Difference between container and container format 
+
+container format is a combination cgroups unionFS namespaces 
+
+container --> runnable instance of an image  in another format its a  running instance of combined container format and application
+
+
+continer format and image 
+read only template with instructions to run your containers. 
+ It is a combination of container format and application   
+
+
+
+can u explain container lifecycle ??
+
+ 
+
+containers get created  create 
+start container or run  the containers
+pause 
+unpause 
+wait state
+stop contianer   normal termination of process 
+ kill container    abnormal termination of process 
+dead state          dead containers you cannot start again
+ 
+container is running 
+                    PID is running  then u can say ur contianer is running 
+
+
+
+
+
+
+ 
