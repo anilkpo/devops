@@ -1,0 +1,39 @@
+ how to create a docker volume ?
+
+A: docker volume create <name for the docker volume>
+
+how to mount a docker volume to a container ?
+
+A: we can use either -v option or use --mount
+
+example : docker run -v soruce:desination  where source is host machine path and desination is container path 
+          docker run --mount src=source dest=destination 
+
+How to lisk all the docker volumes ?
+
+A: docker volume ls 
+
+what happens when we start a contianer 
+
+The top most layer on docker image will be in read write mode. docker container uses this read write layer . for each container  one read write layer is allocated 
+to isolate the containers.  
+
+
+
+how to delete a specific volume ?
+
+A: docker volume rm <container id>
+
+How to delete all unused volumes ?
+
+docker volume prune
+
+how to delete all the volumes ?
+
+docker volume rm $(docker volume ls -q)
+
+How to delete a used volume 
+
+docker volume rm -f <volume id/name> 
+
+
